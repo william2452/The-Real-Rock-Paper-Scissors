@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<style>
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
+<head>
+<h1 style="font-size:50px; color:red; text-align:center;">Will McClean</h1>
+<script>
+			function rock() {
+				var rck = "rock.png"
+				document.getElementById("Choice").src = pic.replace('90X90', '200X200');
+				document.getElementById("Choice").style.display="block";
+			}
+			function paper() {
+				let paper = document.getElementById("paper").style.display = "block";
+				image.src="paper.png"
+				document.getElementById("paperbtn").style.display = 'block';
+			}
+			function scissors() {
+				let scissors = document.getElementById("scissors");
+				image.src="scissors.png"
+				document.getElementById("scissorsbtn").style.display = 'block';
+			}
+		</script>
+</head>
+	<body style="background-color:black;">
+		<p style="font-size:25px; color:purple; text-align:center;">Introducing the Rock, Paper, Scissors Game!</p>
+		<img src="rock-scissors-paper.gif" alt="Rock, Paper, Scissors" class="center" style="width:200px; height:200px;">
+
+			<img id="Choice" src="rock.png">
+			<img id="paper" src="">
+			<img id="scissors" src="">
+
+		<button type="button" onclick="rock()" id="NA">I Choose Rock!</button>
+		<button type="button" onclick="paper()" id="paperbtn">I Choose Paper!</button>
+		<button type="button" onclick="scissors()" id="scissorsbtn">I Choose Scissors!</button>
+		
+		
+	</body>
+</html>
